@@ -19,16 +19,15 @@ namespace CSH1_Tag_03_Aufgabe_05
             for(int i = 0; i < 5; i++)
             {
                 check = false;
-                Console.Write("Bitte Ziffer eingeben: ");
+                Console.WriteLine("Bitte Ziffer eingeben");
+                Console.Write(">>> ");
                 
-                while (!(check = Int32.TryParse(Console.ReadLine(), out eingabe)))
+                while (!(check = Int32.TryParse(Console.ReadKey().KeyChar.ToString(), out eingabe)))
                 {
-                    if(!check)
-                    {
-                        Console.WriteLine("Eingabe keine Zahl!");
-                        Console.Write("Neue Eingabe: ");
-                    }
+                    Console.WriteLine("\nEingabe keine Zahl!");
+                    Console.Write("Neue Eingabe: ");
                 }
+                Console.WriteLine();
 
                 if (eingabe % 2 == 0)
                     gerade += eingabe;
@@ -44,7 +43,7 @@ namespace CSH1_Tag_03_Aufgabe_05
                 }
             }
 
-            Console.WriteLine($"Die Artnummer lautet: {artNummer}");
+            Console.WriteLine($"\nDie Artnummer lautet: {artNummer}");
             Console.ReadKey();
         }
     }
