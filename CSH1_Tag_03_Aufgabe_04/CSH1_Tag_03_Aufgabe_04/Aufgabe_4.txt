@@ -1,0 +1,9 @@
+﻿/*
+ * Schreiben Sie ein C# Programm, das...
+ * In einer Schleife eine Zufallszahl von 1 bis inklusive 99 auswürfelt.
+ * Der Benutzer soll über eine Eingabe die Zahl erraten.
+ * Dabei wird die eingegebene Zahl in einen Integer geparsed. Bei falscher Eingabe soll wiederholt werden.
+ * Das Programm teilt nun dem Benutzer mit, ob die Schätzung kleiner oder größer als die gewürfelte Zahl war.
+ * Die Schleife endet, wenn die gewürfelte Zahl getroffen wurde.
+ * Dem Benutzer wird die Anzahl der Versuche ausgegeben
+ */

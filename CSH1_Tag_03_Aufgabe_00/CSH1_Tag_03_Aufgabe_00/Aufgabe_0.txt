@@ -1,0 +1,8 @@
+﻿/* Aufgabe 0 (Basics)
+ * Schreiben Sie eine statische Funktion, die vom Benutzer eine Zahl abfragt und die eingegebene Zahl als Integer zurück gibt.
+ * Wenn der Benutzer etwas eingibt, was keine ganze Zahl ist, soll eine Fehlermeldung erscheinen und die Abfrage wird wiederholt.
+ * Geben Sie im Main zum Testen die eingegebene Zahl in der Konsole aus.
+ * Übergabewert: Keine
+ * Rückgabewert: Die eingegebene Zahl
+ * Hinweis: Die Eingabe findet immer als String statt. Dieser String muss nach der Eingabe in einen Integer konvertiert werden. Hier sollen Sie nun die TryParse-Methode verwenden. Damit die Abfrage bei einer Fehleingabe wiederholt werden kann, muss die Eingabe des Benutzers und das Parsen in einen Integer in einer Schleife stattfinden. Zur Überprüfung, ob die Eingabe richtig war, verwenden Sie den booleschen Rückgabewert von TryParse()
+ */
