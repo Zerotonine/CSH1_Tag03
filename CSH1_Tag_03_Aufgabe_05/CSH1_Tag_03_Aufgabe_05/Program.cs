@@ -14,15 +14,13 @@ namespace CSH1_Tag_03_Aufgabe_05
             int ungerade = 0;
             int eingabe = 0;
             int artNummer = 0;
-            bool check;
 
             for(int i = 0; i < 5; i++)
             {
-                check = false;
                 Console.WriteLine("Bitte Ziffer eingeben");
                 Console.Write(">>> ");
                 
-                while (!(check = Int32.TryParse(Console.ReadKey().KeyChar.ToString(), out eingabe)))
+                while (!Int32.TryParse(Console.ReadKey().KeyChar.ToString(), out eingabe))
                 {
                     Console.WriteLine("\nEingabe keine Zahl!");
                     Console.Write("Neue Eingabe: ");
