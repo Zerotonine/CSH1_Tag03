@@ -35,13 +35,10 @@ namespace CSH1_Tag_03_Aufgabe_05
                     ungerade += eingabe * 3;
 
                 artNummer = (artNummer + eingabe) * 10;
-
-                if(i == 4)
-                {
-                    int prüfziffer = (gerade + ungerade) % 10;
-                    artNummer += prüfziffer;
-                }
             }
+
+            int prüfziffer = (gerade + ungerade) % 10;
+            artNummer += prüfziffer;
 
             Console.WriteLine($"\nDie Artnummer lautet: {artNummer}");
             Console.ReadKey();
